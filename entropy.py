@@ -45,7 +45,8 @@ class SymbolicMultivalued:
             return self.hist[key]/self.n
         else:
             return 0
-        
+
+# (Hu, On statistics, probability, and entropy of interval-valued datasets)
 def intervalPDF(X: pd.Series):
 
     nondegen_len = sum([x.min != x.max for x in X])
