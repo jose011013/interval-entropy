@@ -18,7 +18,7 @@ class SymbolicInterval:
     def __str__(self):
         return f"[{self.min} : {self.max}]"
     
-    def isSubset(self, interval):
+    def isSubset(self, interval: SymbolicInterval) -> bool:
         return (self.min >= interval.min) & (self.max <= interval.max)
 
 class SymbolicMultivalued:
