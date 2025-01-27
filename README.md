@@ -32,8 +32,8 @@ Traditional entropy measures are not well-suited for symbolic data types, such a
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/generalized-entropy-interval.git
-cd generalized-entropy-interval
+git clone https://github.com/jose011013/interval-entropy.git
+cd interval-entropy
 ```
 
 Install the required dependencies:
@@ -46,12 +46,8 @@ pip install -r requirements.txt
 
 To calculate the generalized entropy for a dataset of interval-valued variables:
 
-1. Prepare your data as a CSV file with each row representing an interval (e.g., `lower_bound,upper_bound`).
-2. Use the provided script to compute entropy:
-
-```bash
-python compute_entropy.py --input data/intervals.csv --output results/entropy.json
-```
+1. Read your data as a pandas Data Frame.
+2. Use the provided script to compute entropy.
 
 ### Command-Line Options
 
@@ -59,39 +55,3 @@ python compute_entropy.py --input data/intervals.csv --output results/entropy.js
 - `--output`: Path to save the computed entropy results.
 - `--plot`: (Optional) Generate visualizations of entropy distributions.
 
-## Examples
-
-An example dataset is provided in `data/example_intervals.csv`. To compute entropy for this dataset:
-
-```bash
-python compute_entropy.py --input data/example_intervals.csv --output results/example_entropy.json --plot
-```
-
-The results will include a JSON file with entropy values and visualizations saved in the `results` directory.
-
-## Citation
-
-If you use this code or refer to the paper, please cite:
-
-```bibtex
-@article{piedra2025generalizedentropy,
-  title={Generalized Entropy for Interval-Valued Data},
-  author={Piedra, José Andrés},
-  journal={Journal of Symbolic Data Analysis},
-  year={2025}
-}
-```
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -m 'Add feature-name'`).
-4. Push to the branch (`git push origin feature-name`).
-5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
