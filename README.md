@@ -1,6 +1,6 @@
-# Generalized Entropy for Interval-Valued Data
+# An Extension of Entropy for Interval-Valued Data
 
-This repository contains the implementation of the methods and algorithms presented in the paper **"Generalized Entropy for Interval-Valued Data"**. The paper introduces a novel framework for calculating entropy in symbolic data analysis, focusing on interval-valued variables. This approach broadens the traditional understanding of entropy by accounting for the variability and uncertainty inherent in interval representations.
+This repository contains the implementation of the methods and algorithms presented in the article **An Extension of Entropy for Interval-Valued Data**, presented at the SDA 2025 Workshop in Varaždin, Croatia. This approach broadens the traditional understanding of entropy by accounting for the variability and uncertainty inherent in interval representations.
 
 ## Table of Contents
 
@@ -15,17 +15,16 @@ This repository contains the implementation of the methods and algorithms presen
 
 ## Overview
 
-Traditional entropy measures are not well-suited for symbolic data types, such as intervals, sets, or histograms, which arise in applications where uncertainty or imprecision is present. This project implements a generalized entropy measure that:
+Traditional entropy measures are not well-suited for symbolic data types, such as intervals, sets, or histograms, which arise in applications where uncertainty or imprecision is present. This project implements an extension of entropy that
 
 1. Incorporates the variability within interval-valued data.
 2. Preserves key properties of entropy, such as non-negativity and additivity.
-3. Extends to more complex symbolic data structures in future work.
 
 ## Features
 
 - Implementation of the generalized entropy formula for interval-valued data.
-- Visualization tools for comparing entropy values across datasets.
-- A modular design for extending the framework to other symbolic data types.
+- Tools for comparing entropy values across datasets.
+
 
 ## Installation
 
@@ -44,7 +43,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-To calculate the generalized entropy for a dataset of interval-valued variables:
+To calculate the entropy for a dataset of interval-valued variables:
 
 1. Read your data as a pandas Data Frame.
 2. Use the provided script to compute entropy.
